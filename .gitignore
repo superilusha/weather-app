@@ -14,5 +14,4 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-*.xcodeproj/project.xcworkspace/xcuserdata/ilyanoshin.xcuserdatad/UserInterfaceState.xcuserstate
+
