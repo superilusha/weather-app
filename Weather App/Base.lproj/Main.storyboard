@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,15 +21,15 @@
                                 <rect key="frame" x="-6" y="-6" width="426" height="902"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="90" translatesAutoresizingMaskIntoConstraints="NO" id="UXm-rj-sfm">
-                                <rect key="frame" x="238.5" y="763" width="82" height="48.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your City" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="90" translatesAutoresizingMaskIntoConstraints="NO" id="UXm-rj-sfm">
+                                <rect key="frame" x="229" y="763" width="91.5" height="48.5"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="themeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV3-St-1hd">
                                 <rect key="frame" x="326" y="763" width="68" height="48.5"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="themeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
                                     <imageReference key="image" image="magnifyingglass.circle.fill" catalog="system" variableValue="1"/>
@@ -38,9 +39,9 @@
                                     <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQ7-wu-8CI"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j9g-bR-E8x">
-                                <rect key="frame" x="95" y="69.5" width="225" height="215.5"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j9g-bR-E8x">
+                                <rect key="frame" x="95" y="72" width="225" height="210.5"/>
+                                <color key="tintColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="215" id="4R5-0x-j6g"/>
                                 </constraints>
@@ -51,13 +52,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="44" translatesAutoresizingMaskIntoConstraints="NO" id="Cgy-zX-erg">
                                         <rect key="frame" x="0.0" y="0.0" width="114.5" height="87"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="87"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="44" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-Bw-xdV">
                                         <rect key="frame" x="122.5" y="0.0" width="92" height="87"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="87"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -68,19 +69,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Feels like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="2tb-ed-GWK">
                                         <rect key="frame" x="0.0" y="0.0" width="77" height="17"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-Lr-xlr">
                                         <rect key="frame" x="82" y="0.0" width="22.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="SVo-yF-8hP">
                                         <rect key="frame" x="109.5" y="0.0" width="18" height="17"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="themeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -123,8 +124,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="3840" height="2160"/>
+        <image name="background" width="2560" height="1024"/>
+        <image name="cloud.fill" catalog="system" width="128" height="87"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
+        <namedColor name="themeColor">
+            <color red="0.22352941176470589" green="0.46274509803921571" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

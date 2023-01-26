@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
     
@@ -17,7 +18,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     
     var networkWeatherManager = NetworkWeatherManager()
+
     
+    // Настройка запроса геопозиции
+    lazy var locationManager: CLLocationManager = {
+        let lm = CLLocationManager ()
+        lm.delegate = self
+        lm.desiredAccuracy = kCLLocationAccuracyKilometer
+        lm.requestWhenInUseAuthorization()
+        return lm
+    } ()
     
     
     
@@ -29,9 +39,13 @@ class ViewController: UIViewController {
             guard let self = self else {return}
             self.updateInterfaceWith(weather: currentWeather)
         }
-        networkWeatherManager.fetchCurrentWeather(forCity: "Moscow")
         
-    
+        // Запрос текущей локации
+       
+            if CLLocationManager.locationServicesEnabled() {
+                self.locationManager.requestLocation()
+            }
+        
         
     }
     
@@ -53,11 +67,26 @@ class ViewController: UIViewController {
     // привязываю аутлет кнопки и вешаю на нее алерт
     @IBAction func searchPressed(_ sender: UIButton) {
         self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { [unowned self] city in
-            self.networkWeatherManager.fetchCurrentWeather(forCity: city)
+            self.networkWeatherManager.fetchCurrentWeather(forRequestType: .cityName(city: city))
         }
     }
     
 
-
 }
 
+
+// Подписываюсь на протокол
+extension ViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else {return}
+        let latitude = location.coordinate.latitude
+        let longitude = location.coordinate.longitude
+        
+        networkWeatherManager.fetchCurrentWeather(forRequestType: .coordinate(latitude: latitude, longitude: longitude))
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription )
+    }
+}
