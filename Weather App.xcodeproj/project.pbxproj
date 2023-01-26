@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01A529D298316DC00EAEA5F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D01A529C298316DC00EAEA5F /* README.md */; };
 		D06A6696297ABC76005B98A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A6695297ABC76005B98A5 /* AppDelegate.swift */; };
 		D06A6698297ABC76005B98A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A6697297ABC76005B98A5 /* SceneDelegate.swift */; };
 		D06A669A297ABC76005B98A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A6699297ABC76005B98A5 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01A529C298316DC00EAEA5F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "Weather App/README.md"; sourceTree = "<group>"; };
 		D06A6692297ABC76005B98A5 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06A6695297ABC76005B98A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06A6697297ABC76005B98A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		D06A6689297ABC76005B98A5 = {
 			isa = PBXGroup;
 			children = (
+				D01A529C298316DC00EAEA5F /* README.md */,
 				D0867B19297EE04500D0F552 /* .gitignore */,
 				D06A6694297ABC76005B98A5 /* Weather App */,
 				D06A6693297ABC76005B98A5 /* Products */,
@@ -185,6 +188,7 @@
 			files = (
 				D0867B1A297EE04500D0F552 /* .gitignore in Resources */,
 				D06A66A2297ABC77005B98A5 /* LaunchScreen.storyboard in Resources */,
+				D01A529D298316DC00EAEA5F /* README.md in Resources */,
 				D06A669F297ABC77005B98A5 /* Assets.xcassets in Resources */,
 				D06A669D297ABC76005B98A5 /* Main.storyboard in Resources */,
 			);
