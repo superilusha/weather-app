@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D01A529D298316DC00EAEA5F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D01A529C298316DC00EAEA5F /* README.md */; };
+		D020AFCF29831D02005ABFA0 /* dark-theme-example.png in Resources */ = {isa = PBXBuildFile; fileRef = D020AFCD29831D02005ABFA0 /* dark-theme-example.png */; };
+		D020AFD029831D02005ABFA0 /* light-theme-example.png in Resources */ = {isa = PBXBuildFile; fileRef = D020AFCE29831D02005ABFA0 /* light-theme-example.png */; };
 		D06A6696297ABC76005B98A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A6695297ABC76005B98A5 /* AppDelegate.swift */; };
 		D06A6698297ABC76005B98A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A6697297ABC76005B98A5 /* SceneDelegate.swift */; };
 		D06A669A297ABC76005B98A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A6699297ABC76005B98A5 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		D01A529C298316DC00EAEA5F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "Weather App/README.md"; sourceTree = "<group>"; };
+		D020AFCD29831D02005ABFA0 /* dark-theme-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dark-theme-example.png"; path = "../../../../../Desktop/dark-theme-example.png"; sourceTree = "<group>"; };
+		D020AFCE29831D02005ABFA0 /* light-theme-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "light-theme-example.png"; path = "../../../../../Desktop/light-theme-example.png"; sourceTree = "<group>"; };
 		D06A6692297ABC76005B98A5 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06A6695297ABC76005B98A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06A6697297ABC76005B98A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D020AFCC29831CA6005ABFA0 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D020AFCD29831D02005ABFA0 /* dark-theme-example.png */,
+				D020AFCE29831D02005ABFA0 /* light-theme-example.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		D06A6689297ABC76005B98A5 = {
 			isa = PBXGroup;
 			children = (
+				D020AFCC29831CA6005ABFA0 /* assets */,
 				D01A529C298316DC00EAEA5F /* README.md */,
 				D0867B19297EE04500D0F552 /* .gitignore */,
 				D06A6694297ABC76005B98A5 /* Weather App */,
@@ -188,6 +202,8 @@
 			files = (
 				D0867B1A297EE04500D0F552 /* .gitignore in Resources */,
 				D06A66A2297ABC77005B98A5 /* LaunchScreen.storyboard in Resources */,
+				D020AFD029831D02005ABFA0 /* light-theme-example.png in Resources */,
+				D020AFCF29831D02005ABFA0 /* dark-theme-example.png in Resources */,
 				D01A529D298316DC00EAEA5F /* README.md in Resources */,
 				D06A669F297ABC77005B98A5 /* Assets.xcassets in Resources */,
 				D06A669D297ABC76005B98A5 /* Main.storyboard in Resources */,
